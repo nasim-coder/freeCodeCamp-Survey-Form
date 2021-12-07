@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(214, 203, 39);
+    font-size: large;
+}
+
+.heading-container{
+    text-align: center;
+}
+.form-container {
+    background-color: rgb(226, 161, 136);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding : 2rem
+}
+input{
+    
+}
