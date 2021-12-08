@@ -6,33 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp-Survey-Form</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <div class="heading-container">
         <h1 id='title'>freeCodeCamp-Survey</h1>
-        <p id="description">Thank you for participting in the survey, it will help to improve the system</p>
+        <p id="description">Thank you for participting in the survey, it will help to improve the platform</p>
     </div>
 
     <div class="form-container">
         <form action="" id="survey-form">
             <div>
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Please enter name">
+                <label for="name" id="name-label">Name :</label>
+                <input type="text" id="name" placeholder="Please enter name" required>
             </div>
             <div>
-                <label for="email" id="email-label">Email</label>
-                <input type="email" id="email" placeholder="Please enter email">
+                <label for="email" id="email-label">Email :</label>
+                <input type="email" id="email" placeholder="Please enter email" required>
             </div>
             <div>
-                <label for="">Mobile Number</label>
-                <input type="tel" placeholder="Please enter mobile number">
+                <label for="">Mobile Number :</label>
+                <input type="tel" placeholder="Please enter mobile number" id="mobile" required>
             </div>
 
             <div>
-                <label for="gender">Gender</label>
+                <label for="gender">Gender :</label>
                 <select name="gender" id="dropdown">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -40,61 +39,59 @@
                 </select>
             </div>
             <div>
-
-                <label for="">Will you recommend freecodecamp to your friends?</label>
+                <label for="">Will you recommend freecodecamp to your friends :</label>
             </div>
 
             <div>
-            <input type="radio" name="name" id="sure">
-            <label for="name">Sure</label>
+                <input type="radio" name="recommendation" id="sure" value="sure">
+                <label for="name">Sure</label>
             </div>
             <div>
-            <input type="radio" name="name" id='maybe'>
-            <label for="maybe">Maybe</label>
-        </div>
-        <div>
-            <input type="radio" name="name" id="no">
-            <label for="no">No</label>
-        </div>
-
-        <div>
-
-            <label for="checkboxes">What would you like to see improved? (Check all that apply)</label>
-        </div>
+                <input type="radio" name="recommendation" id='maybe' value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
             <div>
-            <input type="checkbox" value="front-end">
-            <label for="front-end">Front-end Projects</label>
-        </div>
-        <div>
-            <input type="checkbox" value="back-end">
-            <label for="back-end">Back-end Projects</label>
-        </div>
-        <div>
-            <input type="checkbox" value="data-visual">
-            <label for="data-visual">Data Visualization</label>
-        </div>
-        <div>
-            <input type="checkbox" value="Challenges">
-            <label for="Challenges">Challenges</label>
-        </div>
-        <div>
-            <input type="checkbox" value="additional">
-            <label for="additional">Additional Courses</label>
-        </div>
-        <div>
-            <label for="number" id="number-label">How likely are you to give freeCodeCamp, from 1 to 10 (1 being worst
-                10 being best)</label>
-            <input type="number" min="1" max="10" id="number" placeholder="Enter number rating">
-        </div>
-        <div>
-            <p>Any other additional comments:</p>
-            <textarea name="" id="" cols="30" rows="7"></textarea>
-        </div>
-            <button type="submit">Submit</button>
+                <input type="radio" name="recommendation" id="no" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <label for="checkboxes">What would you like to see improved? (Check all that apply)</label>
+            </div>
+            <div>
+                <input type="checkbox" value="front-end">
+                <label for="front-end">Front-end Projects</label>
+            </div>
+            <div>
+                <input type="checkbox" value="back-end">
+                <label for="back-end">Back-end Projects</label>
+            </div>
+            <div>
+                <input type="checkbox" value="data-visual">
+                <label for="data-visual">Data Visualization</label>
+            </div>
+            <div>
+                <input type="checkbox" value="Challenges">
+                <label for="Challenges">Challenges</label>
+            </div>
+            <div>
+                <input type="checkbox" value="additional">
+                <label for="additional">Additional Courses</label>
+            </div>
+            <div>
+                <label for="number" id="number-label">How likely are you to give freeCodeCamp, from 1 to 10 (1 being
+                    worst
+                    10 being best) :</label>
+                <input type="number" min="1" max="10" id="number" placeholder="Enter number rating">
+            </div>
+            <div>
+                <label for="textarea">Any other suggestion or comment :</label>
+                <textarea name="textarea" cols="30" rows="7"></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
         </form>
     </div>
 
 </body>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
